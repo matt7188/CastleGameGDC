@@ -39,6 +39,13 @@ if(image_angle &gt; 0 &amp;&amp; image_angle &lt; 180)
 
     instance_change(obj_swordBehind, true);
 }
+
+if (y + 80 &lt; obj_castle.y + 210)
+{
+    depth = 4;
+}
+else
+    depth = 1;
 </string>
           </argument>
         </arguments>

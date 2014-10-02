@@ -28,7 +28,7 @@
             <string>scr_camInitialize(); //initializes camera
 instance_create(obj_player.x, obj_player.y, obj_sword);
 
-image_speed = 0.2;
+image_speed = 0.25;
 friction = 0.35;
 </string>
           </argument>
@@ -61,40 +61,44 @@ else
 scr_camera();
  
 //Move Right
-if keyboard_check(ord("D")) &amp;&amp; place_free(x+3,y)
+if keyboard_check(ord("D"))//&amp;&amp; place_free(x+6,y)
 {
     hspeed = 6;
     if (image_index &gt; 12)
     { 
         image_index = 0;
     }
+    //if !place_meeting(x + 6, y, obj_castle) hspeed = 6;
 }
 //Move Left
-if keyboard_check(ord("A")) &amp;&amp; place_free(x-3,y)
+if keyboard_check(ord("A"))//&amp;&amp; place_free(x-6,y)
 {
     hspeed = -6; 
     if (image_index &gt; 12)
     {
         image_index = 0;
     }
+    //if !place_meeting(x - 6, y, obj_castle) hspeed = -6;
 }
 //Move Up
-if keyboard_check(ord("W")) &amp;&amp; place_free(x,y-3)
+if keyboard_check(ord("W"))//)&amp;&amp; place_free(x,y-6)
 {
     vspeed = -6;
     if (image_index &gt; 12)
     {
         image_index = 0; 
     }
+    //if !place_meeting(x, y - 6, obj_castle) vspeed = -6;
 }
 //Move Down
-if keyboard_check(ord("S")) &amp;&amp; place_free(x,y+3)
+if keyboard_check(ord("S")) //&amp;&amp; place_free(x,y+6)
 {
     vspeed = 6; 
     if (image_index &gt; 12) 
     {
         image_index = 0;
     }
+    //if !place_meeting(x, y + 6, obj_castle) vspeed = 6;
 }
 
 if (keyboard_check(vk_nokey))
@@ -109,7 +113,49 @@ if (image_index &lt; 12)
     
 }
 }
+if (y + 72 &lt; obj_castle.y + 210)
+{
+    depth = 5;
+}
+else
+    depth = 1;
     
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_castle">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(instance_nearest(x, y, obj_castle)) &lt; 100)
+{
+    if place_meeting(x, y + vspeed, obj_castle)
+    {
+        vspeed=0
+        y = yprevious
+    }
+    
+    if place_meeting(x + hspeed, y, obj_castle)
+    {
+        hspeed = 0
+        x = xprevious
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -132,20 +178,20 @@ if (image_index &lt; 12)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(instance_nearest(x, y, obj_tree)) &lt; 100)
+            <string>/*if(distance_to_object(instance_nearest(x, y, obj_castle)) &lt; 100)
 {
-    if place_meeting(x, y + vspeed, obj_tree)
+    if place_meeting(x, y + vspeed, obj_castle)
     {
         vspeed=0
         y = yprevious
     }
     
-    if place_meeting(x + hspeed, y, obj_tree)
+    if place_meeting(x + hspeed, y, obj_castle)
     {
         hspeed = 0
         x = xprevious
     }
-}
+}*/
 </string>
           </argument>
         </arguments>
