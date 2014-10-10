@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spaceManSprite</sprite>
+    <sprite>sprites\Spr_pesent</sprite>
     <sprite>sprites\spr_castle</sprite>
     <sprite>sprites\spr_lord_run</sprite>
     <sprite>sprites\bulletSprite</sprite>
@@ -17,8 +17,12 @@
     <sprite>sprites\spr_caslte_mask</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_flag</sprite>
+    <sprite>sprites\spr_fence</sprite>
+    <sprite>sprites\spr_side_fence</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Back_Grass</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_camInitialize.gml</script>
@@ -36,13 +40,15 @@
     <object>objects\obj_ground</object>
     <object>objects\obj_flag</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_fence</object>
+    <object>objects\obj_fence_2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41922.0792386111</constant>
-    <constant name="GM_version">'1.0.0.0'</constant>
+    <constant name="GM_build_date">41922.8884934491</constant>
+    <constant name="GM_version">'100'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
