@@ -35,12 +35,13 @@
     <object>objects\obj_castle</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_flag</object>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41914.8392197685</constant>
+    <constant name="GM_build_date">41922.0792386111</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
