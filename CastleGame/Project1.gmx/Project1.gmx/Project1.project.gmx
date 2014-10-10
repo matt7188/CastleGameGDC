@@ -45,10 +45,10 @@
     <object>objects\obj_Master_control</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\Main_room</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41922.9199028356</constant>
+    <constant name="GM_build_date">41922.9457527778</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

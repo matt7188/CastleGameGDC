@@ -73,7 +73,7 @@ image_speed=.1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Health</string>
+            <string>Hits</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -101,7 +101,8 @@ image_speed=.1
             <kind>1</kind>
             <string>mp_potential_step(obj_castle.x, obj_castle.y, 3, false);
   
-    
+if (distance_to_object(obj_castle)&lt;10)
+    health-=.05;
 </string>
           </argument>
         </arguments>
@@ -380,7 +381,7 @@ image_speed=.1
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Health</string>
+            <string>Hits</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -427,6 +428,26 @@ image_speed=.1
           <argument>
             <kind>0</kind>
             <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>701</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
           </argument>
         </arguments>
       </action>
