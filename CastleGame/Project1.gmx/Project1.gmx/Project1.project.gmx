@@ -42,12 +42,13 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_fence</object>
     <object>objects\obj_fence_2</object>
+    <object>objects\obj_Master_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41922.8884934491</constant>
+    <constant name="GM_build_date">41922.9199028356</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>
