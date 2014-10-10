@@ -19,6 +19,8 @@
     <sprite>sprites\spr_flag</sprite>
     <sprite>sprites\spr_fence</sprite>
     <sprite>sprites\spr_side_fence</sprite>
+    <sprite>sprites\spr_title</sprite>
+    <sprite>sprites\spr_play</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Back_Grass</background>
@@ -43,12 +45,15 @@
     <object>objects\obj_fence</object>
     <object>objects\obj_fence_2</object>
     <object>objects\obj_Master_control</object>
+    <object>objects\obj_title</object>
+    <object>objects\obj_play</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start</room>
     <room>rooms\Main_room</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41922.9457527778</constant>
+    <constant name="GM_build_date">41922.9522866204</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>
