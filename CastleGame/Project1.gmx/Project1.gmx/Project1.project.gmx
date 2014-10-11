@@ -23,6 +23,7 @@
     <sprite>sprites\spr_side_fence</sprite>
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\sprite15</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Back_Grass</background>
@@ -49,13 +50,16 @@
     <object>objects\obj_Master_control</object>
     <object>objects\obj_title</object>
     <object>objects\obj_play</object>
+    <object>objects\obj_arrow</object>
+    <object>objects\obj_highscore</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start</room>
     <room>rooms\Main_room</room>
+    <room>rooms\room3</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41922.9631681481</constant>
+    <constant name="GM_build_date">41923.7619216088</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>
